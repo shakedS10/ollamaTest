@@ -1,6 +1,7 @@
-
-
+import ast
 import json
+import time
+
 from pdfalyzer.decorators.pdf_tree_node import PdfTreeNode
 from yaralyzer import *
 from pdfalyzer import *
@@ -9,7 +10,7 @@ import llm_axe
 from llm_axe import OnlineAgent, OllamaChat, Agent
 import ollama
 
-MODEL = "llama3.2:8b"
+MODEL = "llama3.2:1b"
 
 YaralyzerConfig.set_default_args()
 
@@ -51,7 +52,7 @@ def ask_ollama(prompt, model="default", api_url="http://localhost:11411/api"):
         return f"Error: {response.status_code} - {response.text}"
 
 
-def process_pdf_and_query(pdf_path, query):
+def process_pdf(pdf_path):
     """
     Combines PDF analysis and querying Ollama for insights based on the analysis results.
     """
@@ -68,8 +69,15 @@ def process_pdf_and_query(pdf_path, query):
     # Prepare a summary for Ollama
     safety_status = "safe" if analysis_results["is_safe"] else "unsafe"
     summary = f"The PDF analysis indicates that the document is {safety_status}."
-    ollama_prompt = f"The following is the analysis of a PDF:\n\n{json.dumps(analysis_results, indent=2)}\n\n{query} "
-    
+    ollama_prompt = f"The following is the analysis of a PDF:\n\n{json.dumps(analysis_results, indent=2)}"
+    return ollama_prompt
+
+
+def combine_analysis_and_query(analysis, query):
+    """
+    Combines the analysis of the PDF with the user's query.
+    """
+    ollama_prompt = f"{analysis} \n\n query: {query} "
     return ollama_prompt
 
 
@@ -87,24 +95,27 @@ def process_query_with_agent(query, model=MODEL):
     except Exception as e:
         return f"Error processing with OnlineAgent: {e}"
 
-def process_query_with_online_agent(query, model=MODEL):
+
+def process_query_with_online_agent(query_, model=MODEL):
     """
     Processes a query using the OnlineAgent and returns the response.
     """
     try:
         llm = OllamaChat(model=model)  # Create an Ollama chat instance
         searcher = OnlineAgent(llm)  # Create an OnlineAgent instance
-        response = searcher.search(query)  # Perform the search
-
-        # Return the response from the OnlineAgent
+        response = searcher.search(query_)  # Perform the search
+        if response is None:
+            return "No results found from the search."
         return response
     except Exception as e:
         return f"Error processing with OnlineAgent: {e}"
 
-# Example usage
+
 if __name__ == "__main__":
     pdf_path = "B.pdf"  # PDF path
-    query = "in the json object you received show all the nodes that are of type /link and provide a summary of the document" 
-    fprompt = process_pdf_and_query(pdf_path, query)
+    query = "in the json object you received show all the nodes that are of type /link and provide a summary of the document"
+    analysis = process_pdf(pdf_path)
+    fprompt = combine_analysis_and_query(analysis, query)
     print(process_query_with_agent(fprompt))
-    print(process_query_with_online_agent("go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die"))
+
+    print(process_query_with_online_agent(" what is the weather in Beer Sheba,Israel today?",MODEL))

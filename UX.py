@@ -1,7 +1,7 @@
 import tkinter as tk
-from tkinter import ttk, scrolledtext
-
-from testOllama import process_query_with_agent, process_pdf_and_query, process_query_with_online_agent
+from tkinter import ttk, scrolledtext, filedialog
+from testOllama import process_query_with_agent, process_query_with_online_agent, analyze_pdf, \
+    combine_analysis_and_query, process_pdf, MODEL
 
 # Define global colors
 light_gray = "#D3D3D3"
@@ -21,7 +21,7 @@ FOOTER_BG = "black"  # Background color of the footer
 FOOTER_TEXT = "white"  # Text color of the footer
 
 # Define global sizes and locations
-WINDOW_WIDTH = 800  # Width of the main window
+WINDOW_WIDTH = 900  # Width of the main window
 WINDOW_HEIGHT = 600  # Height of the main window
 CHAT_WINDOW_HEIGHT = 25  # Height of the chat window
 CHAT_WINDOW_WIDTH = 70  # Width of the chat window
@@ -32,17 +32,34 @@ FOOTER_FONT_SIZE = 10  # Font size for the footer
 PADDING_X = 10  # Horizontal padding
 PADDING_Y = 10  # Vertical padding
 
+pdf_path = ""  # Initialize pdf_path as empty
+pdf_analysis = ""
+
+
+# Function to open file dialog and select PDF
+def select_pdf():
+    global pdf_path, pdf_analysis, links_on_pdf
+    pdf_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
+    if pdf_path:  # If the user selects a file
+        # Proceed with PDF analysis
+        pdf_analysis = process_pdf(pdf_path)
+        print(f"PDF selected: {pdf_path}")
+        pdf_analysis = process_pdf(pdf_path)
+    else:
+        print("No file selected.")
+
 
 # Chatbot logic (replace with your chatbot logic)
 def get_response(user_message):
-    pdf_path = "B.pdf"  # PDF path
-    query = user_message
-    fprompt = process_pdf_and_query(pdf_path, query)
-    pqwa_response = process_query_with_agent(fprompt)
-    pqwoa_response = process_query_with_online_agent(
-        "go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die")
-
-    return f"{pqwa_response} \n\n ------------------------------------------------- \n {pqwoa_response}"
+    if pdf_path:  # Ensure the PDF path is not empty
+        fprompt = combine_analysis_and_query(pdf_analysis, user_message)
+        pqwa_response = process_query_with_agent(fprompt)
+        pqwoa_response = process_query_with_online_agent(query=" go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die",model=MODEL)
+        ans = f"{pqwa_response} \n\n -------------------------ONLINE----------------------- \n {pqwoa_response}"
+        print("ans: ", ans)
+        return ans
+    else:
+        return "Error: PDF file is not selected."
 
 
 # Function to handle sending messages
@@ -79,6 +96,13 @@ root.configure(bg=BG_COLOR)
 header = tk.Label(root, text="Welcome to the Local Chatbot!", font=("Arial", HEADER_FONT_SIZE, "bold"), bg=HEADER_BG,
                   fg=HEADER_TEXT)
 header.pack(fill=tk.X, pady=PADDING_Y)
+
+# Add a button to select PDF file before chat
+select_pdf_button = tk.Button(root, text="Select PDF", command=select_pdf, bg=BUTTON_BG, fg=BUTTON_TEXT,
+                              font=("Arial", BUTTON_FONT_SIZE),
+                              activebackground=BUTTON_ACTIVE_BG, activeforeground=BUTTON_ACTIVE_TEXT)
+select_pdf_button.pack(pady=PADDING_Y)
+select_pdf_button.place(x=10, y=550)
 
 # Configure Scrollbar Style (change colors)
 style = ttk.Style()
@@ -136,7 +160,7 @@ root.bind("<Return>", lambda event: send_message())
 
 # curser
 root.config(cursor="arrow")  # Set the default cursor for the window
-input_box.config(cursor="hand2")  # Set the default cursor for the input box
+input_box.config(cursor="xterm")  # Set the cursor to I-beam (text cursor) for the input box
 chat_window.config(cursor="arrow")  # Set a visible cursor type for the chat window
 send_button.config(cursor="hand2")
 
