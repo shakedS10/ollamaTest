@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, scrolledtext
 
+from testOllama import process_query_with_agent, process_pdf_and_query, process_query_with_online_agent
+
 # Define global colors
 light_gray = "#D3D3D3"
 derk_blue = "#2c3e50"
@@ -30,9 +32,18 @@ FOOTER_FONT_SIZE = 10  # Font size for the footer
 PADDING_X = 10  # Horizontal padding
 PADDING_Y = 10  # Vertical padding
 
+
 # Chatbot logic (replace with your chatbot logic)
 def get_response(user_message):
-    return f"I'm a local chatbot. You said: {user_message}"
+    pdf_path = "B.pdf"  # PDF path
+    query = user_message
+    fprompt = process_pdf_and_query(pdf_path, query)
+    pqwa_response = process_query_with_agent(fprompt)
+    pqwoa_response = process_query_with_online_agent(
+        "go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die")
+
+    return f"{pqwa_response} \n\n ------------------------------------------------- \n {pqwoa_response}"
+
 
 # Function to handle sending messages
 def send_message():
@@ -57,6 +68,7 @@ def send_message():
     # Clear the input box
     input_box.delete(0, tk.END)
 
+
 # Create main window
 root = tk.Tk()
 root.title("Local Chatbot")
@@ -72,9 +84,9 @@ header.pack(fill=tk.X, pady=PADDING_Y)
 style = ttk.Style()
 style.configure("TScrollbar",
                 gripcount=0,
-                background="gray",    # Set the background color of the scrollbar
+                background="gray",  # Set the background color of the scrollbar
                 troughcolor="lightgray",  # Set the trough color (the background of the scrollbar track)
-                width=15)             # Adjust the width of the scrollbar
+                width=15)  # Adjust the width of the scrollbar
 
 # Chat window (scrollable)
 chat_window = scrolledtext.ScrolledText(
@@ -122,12 +134,11 @@ footer.pack(fill=tk.X, side=tk.BOTTOM)
 # Bind Enter key
 root.bind("<Return>", lambda event: send_message())
 
-#curser
+# curser
 root.config(cursor="arrow")  # Set the default cursor for the window
 input_box.config(cursor="hand2")  # Set the default cursor for the input box
 chat_window.config(cursor="arrow")  # Set a visible cursor type for the chat window
 send_button.config(cursor="hand2")
-
 
 # Run the application
 if __name__ == "__main__":

@@ -9,6 +9,8 @@ import llm_axe
 from llm_axe import OnlineAgent, OllamaChat, Agent
 import ollama
 
+MODEL = "llama3.2:8b"
+
 YaralyzerConfig.set_default_args()
 
 
@@ -71,7 +73,7 @@ def process_pdf_and_query(pdf_path, query):
     return ollama_prompt
 
 
-def process_query_with_agent(query, model="llama3.2:1b"):
+def process_query_with_agent(query, model=MODEL):
     """
     Processes a query using the OnlineAgent and returns the response.
     """
@@ -85,7 +87,7 @@ def process_query_with_agent(query, model="llama3.2:1b"):
     except Exception as e:
         return f"Error processing with OnlineAgent: {e}"
 
-def process_query_with_online_agent(query, model="llama3.2:1b"):
+def process_query_with_online_agent(query, model=MODEL):
     """
     Processes a query using the OnlineAgent and returns the response.
     """
@@ -101,7 +103,7 @@ def process_query_with_online_agent(query, model="llama3.2:1b"):
 
 # Example usage
 if __name__ == "__main__":
-    pdf_path = "B.pdf"  # Replace with the actual PDF path
+    pdf_path = "B.pdf"  # PDF path
     query = "in the json object you received show all the nodes that are of type /link and provide a summary of the document" 
     fprompt = process_pdf_and_query(pdf_path, query)
     print(process_query_with_agent(fprompt))
