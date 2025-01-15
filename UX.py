@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, scrolledtext, filedialog
 from testOllama import process_query_with_agent, process_query_with_online_agent, analyze_pdf, \
     combine_analysis_and_query, process_pdf, MODEL
+from virusTotal import get_analysis
 
 # Define global colors
 light_gray = "#D3D3D3"
