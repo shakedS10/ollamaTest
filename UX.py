@@ -35,19 +35,29 @@ PADDING_Y = 10  # Vertical padding
 
 pdf_path = ""  # Initialize pdf_path as empty
 pdf_analysis = ""
+total_v_short = ""
+total_v_full = ""
 
 
 # Function to open file dialog and select PDF
 def select_pdf():
-    global pdf_path, pdf_analysis, links_on_pdf
+    global pdf_path
     pdf_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
     if pdf_path:  # If the user selects a file
         # Proceed with PDF analysis
-        pdf_analysis = process_pdf(pdf_path)
         print(f"PDF selected: {pdf_path}")
-        pdf_analysis = process_pdf(pdf_path)
+        get_pdf_data()
+
     else:
         print("No file selected.")
+
+
+def get_pdf_data():
+    global pdf_path, pdf_analysis, total_v_short, total_v_full
+    pdf_analysis = process_pdf(pdf_path)
+    pdf_analysis = process_pdf(pdf_path)
+    total_v_short = get_analysis(pdf_path)
+    total_v_full = get_analysis(pdf_path, short=False, full=True)
 
 
 # Chatbot logic (replace with your chatbot logic)
@@ -55,7 +65,8 @@ def get_response(user_message):
     if pdf_path:  # Ensure the PDF path is not empty
         fprompt = combine_analysis_and_query(pdf_analysis, user_message)
         pqwa_response = process_query_with_agent(fprompt)
-        pqwoa_response = process_query_with_online_agent(query_=" go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die",model=MODEL)
+        pqwoa_response = process_query_with_online_agent(
+            query_=" go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die", model=MODEL)
         ans = f"{pqwa_response} \n\n -------------------------ONLINE----------------------- \n {pqwoa_response}"
         print("ans: ", ans)
         return ans
@@ -94,7 +105,7 @@ root.geometry(f"{WINDOW_WIDTH}x{WINDOW_HEIGHT}")
 root.configure(bg=BG_COLOR)
 
 # Header
-header = tk.Label(root, text="Welcome to the Local Chatbot!", font=("Arial", HEADER_FONT_SIZE, "bold"), bg=HEADER_BG,
+header = tk.Label(root, text="Welcome! Please upload a PDF to review", font=("Arial", HEADER_FONT_SIZE, "bold"), bg=HEADER_BG,
                   fg=HEADER_TEXT)
 header.pack(fill=tk.X, pady=PADDING_Y)
 
