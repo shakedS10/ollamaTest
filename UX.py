@@ -54,7 +54,7 @@ def get_response(user_message):
     if pdf_path:  # Ensure the PDF path is not empty
         fprompt = combine_analysis_and_query(pdf_analysis, user_message)
         pqwa_response = process_query_with_agent(fprompt)
-        pqwoa_response = process_query_with_online_agent(query=" go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die",model=MODEL)
+        pqwoa_response = process_query_with_online_agent(query_=" go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die",model=MODEL)
         ans = f"{pqwa_response} \n\n -------------------------ONLINE----------------------- \n {pqwoa_response}"
         print("ans: ", ans)
         return ans
