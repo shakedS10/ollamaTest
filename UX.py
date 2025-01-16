@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, scrolledtext, filedialog
 from testOllama import process_query_with_agent, process_query_with_online_agent, analyze_pdf, \
-    combine_analysis_and_query, process_pdf, MODEL
+    combine_analysis_and_query, process_pdf, MODEL, get_unique_links_from_pdf
 from virusTotal import get_analysis
 
 # Define global colors
@@ -64,8 +64,16 @@ def get_pdf_data():
 
 
 def get_agent_analysis():
-    prompt = pdf_analysis + "\n\nVirus Total Analysis:\n be suspicious! so if some of viruse total report points that " \
-                            "its malicious so it is! be determined" + total_v_short
+    prompt = pdf_analysis
+    links = get_unique_links_from_pdf(pdf_path)
+    if len(links) > 0:
+        prompt = prompt + "the PDF contain some links, here is there evaluation:\n"
+    for l in links:
+        link_evaluation = process_query_with_online_agent("is this link malicious?: " + l)
+        link_evaluation = "evaluation for link " + l + ":" + link_evaluation
+        prompt = prompt + "\n" + link_evaluation
+    prompt = prompt + "\n\nVirus Total Analysis:\n  be suspicious! so if some of viruse total report points that " \
+             "its malicious so it is! be determined!" + total_v_short
     prompt = combine_analysis_and_query(prompt, "Is the PDF malicious?")
     response = process_query_with_agent(prompt)
     memory["responses"].insert(0, response)
@@ -95,6 +103,7 @@ def get_analysis_btn():
         chat_window.insert(tk.END, "Chatbot: ", "bold")
         chat_window.insert(tk.END, f"Please upload a PDF file first\n")
     print("Done")
+
 
 # Function to handle sending messages
 def send_message(to_analyze=False):

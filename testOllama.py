@@ -14,6 +14,37 @@ MODEL = "llama3:8b"
 
 YaralyzerConfig.set_default_args()
 
+from PyPDF2 import PdfReader
+
+def get_unique_links_from_pdf(pdf_path):
+    """
+    Extracts all unique links from a PDF file using PyPDF2.
+
+    Args:
+        pdf_path (str): Path to the PDF file.
+
+    Returns:
+        list: A list of unique links found in the PDF.
+    """
+    try:
+        # Load the PDF file
+        reader = PdfReader(pdf_path)
+        links = set()  # Use a set to store unique links
+
+        # Iterate through pages
+        for page in reader.pages:
+            if "/Annots" in page:
+                annotations = page["/Annots"]
+                for annotation in annotations:
+                    annotation_obj = annotation.get_object()
+                    if "/A" in annotation_obj and "/URI" in annotation_obj["/A"]:
+                        link = annotation_obj["/A"]["/URI"]
+                        links.add(link)
+
+        return list(links)  # Convert set to list before returning
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
 
 def analyze_pdf(pdf_path):
     """
@@ -77,7 +108,7 @@ def combine_analysis_and_query(analysis, query):
     """
     Combines the analysis of the PDF with the user's query.
     """
-    ollama_prompt = f"{analysis} \n\n query: {query} "
+    ollama_prompt = f"{analysis} \n\n QUERY: {query} "
     return ollama_prompt
 
 
