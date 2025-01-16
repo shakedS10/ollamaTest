@@ -64,7 +64,8 @@ def get_pdf_data():
 
 
 def get_agent_analysis():
-    prompt = pdf_analysis + "\n\nVirus Total Analysis" + total_v_short
+    prompt = pdf_analysis + "\n\nVirus Total Analysis:\n be suspicious! so if some of viruse total report points that " \
+                            "its malicious so it is! be determined" + total_v_short
     prompt = combine_analysis_and_query(prompt, "Is the PDF malicious?")
     response = process_query_with_agent(prompt)
     memory["responses"].insert(0, response)
@@ -93,7 +94,7 @@ def get_analysis_btn():
     else:
         chat_window.insert(tk.END, "Chatbot: ", "bold")
         chat_window.insert(tk.END, f"Please upload a PDF file first\n")
-
+    print("Done")
 
 # Function to handle sending messages
 def send_message(to_analyze=False):

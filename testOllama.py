@@ -10,7 +10,7 @@ import llm_axe
 from llm_axe import OnlineAgent, OllamaChat, Agent
 import ollama
 
-MODEL = "llama3.2:1b"
+MODEL = "llama3:8b"
 
 YaralyzerConfig.set_default_args()
 
