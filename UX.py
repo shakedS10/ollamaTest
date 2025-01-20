@@ -1,233 +1,207 @@
-import tkinter as tk
-from tkinter import ttk, scrolledtext, filedialog
-from testOllama import process_query_with_agent, process_query_with_online_agent, analyze_pdf, \
-    combine_analysis_and_query, process_pdf, MODEL, get_unique_links_from_pdf
+import gradio as gr
+from testOllama import (
+    process_query_with_agent,
+    process_query_with_online_agent,
+    analyze_pdf,
+    combine_analysis_and_query,
+    process_pdf,
+    MODEL,
+    get_unique_links_from_pdf
+)
 from virusTotal import get_analysis
 
-# Define global colors
-light_gray = "#D3D3D3"
-derk_blue = "#2c3e50"
-BG_COLOR = derk_blue  # Background color of the window
-CHAT_BG_COLOR = light_gray  # Background color of the chat window
-CHAT_TEXT_COLOR = derk_blue  # Text color in the chat window
-INPUT_BOX_BG = light_gray  # Background color of the input box
-INPUT_BOX_TEXT = derk_blue  # Text color of the input box
-BUTTON_BG = light_gray  # Background color of the send button
-BUTTON_TEXT = "black"  # Text color of the send button
-BUTTON_ACTIVE_BG = "black"  # Active (hover) background color of the send button
-BUTTON_ACTIVE_TEXT = "white"  # Active (hover) text color of the send button
-HEADER_BG = "#34495e"  # Background color of the header
-HEADER_TEXT = "white"  # Text color of the header
-FOOTER_BG = "black"  # Background color of the footer
-FOOTER_TEXT = "white"  # Text color of the footer
+# We replicate the same global variables you had in the tkinter code,
+# but we'll store them inside Gradio's state instead of actual global scope.
+# This way the state will travel between function calls in the interface.
 
-# Define global sizes and locations
-WINDOW_WIDTH = 1000  # Width of the main window
-WINDOW_HEIGHT = 600  # Height of the main window
-CHAT_WINDOW_HEIGHT = 25  # Height of the chat window
-CHAT_WINDOW_WIDTH = 70  # Width of the chat window
-INPUT_BOX_WIDTH = 52  # Width of the input box
-BUTTON_FONT_SIZE = 14  # Font size for the button
-HEADER_FONT_SIZE = 16  # Font size for the header
-FOOTER_FONT_SIZE = 10  # Font size for the footer
-PADDING_X = 10  # Horizontal padding
-PADDING_Y = 10  # Vertical padding
+def select_pdf(pdf_file, state):
+    """
+    Handles uploading/choosing a PDF file.
+    Once the file is selected, we analyze it and store results in the state.
+    """
+    if not pdf_file:
+        return (
+            state,
+            [("System", "No file selected. Please upload a PDF file.")]
+        )
 
-pdf_path = ""  # Initialize pdf_path as empty
-pdf_analysis = ""
-total_v_short = ""
-total_v_full = ""
-memory = {}
+    # The file object is a temporary file in Gradio; get its path:
+    pdf_path = pdf_file.name
+    state["pdf_path"] = pdf_path
 
-
-# Function to open file dialog and select PDF
-def select_pdf():
-    global pdf_path, memory
-    pdf_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
-    if pdf_path:  # If the user selects a file
-        # Proceed with PDF analysis
-        print(f"PDF selected: {pdf_path}")
-        memory = {"path": pdf_path,
-                  "responses": []}  # delete the memory when start working on a new PDF
-        get_pdf_data()
-
-
-    else:
-        print("No file selected.")
-
-
-def get_pdf_data():
-    global pdf_path, pdf_analysis, total_v_short, total_v_full, memory
+    # Process PDF:
     pdf_analysis = process_pdf(pdf_path)
     total_v_short = get_analysis(pdf_path)
     total_v_full = get_analysis(pdf_path, short=False, full=True)
 
+    # Save results in state
+    state["pdf_analysis"] = pdf_analysis
+    state["total_v_short"] = total_v_short
+    state["total_v_full"] = total_v_full
+    # Reset memory for a fresh PDF
+    state["memory"] = {"path": pdf_path, "responses": []}
 
-def get_agent_analysis():
+    return (
+        state,
+        [("System", f"PDF selected and analyzed: {pdf_path}")]
+    )
+
+def get_agent_analysis(state):
+    """
+    This replicates your get_agent_analysis() logic from the Tkinter code.
+    It uses the already analyzed PDF (pdf_analysis, virus total data, etc.)
+    and calls the LLM to see if the PDF is malicious.
+    """
+    pdf_path = state["pdf_path"]
+    pdf_analysis = state["pdf_analysis"]
+    total_v_short = state["total_v_short"]
+
+    # Build the prompt from the PDF analysis
     prompt = pdf_analysis
+
+    # Evaluate links inside the PDF
     links = get_unique_links_from_pdf(pdf_path)
     if len(links) > 0:
-        prompt = prompt + "the PDF contain some links, here is there evaluation:\n"
-    for l in links:
-        link_evaluation = process_query_with_online_agent("is this link malicious?: " + l)
-        link_evaluation = "evaluation for link " + l + ":" + link_evaluation
-        prompt = prompt + "\n" + link_evaluation
-    prompt = prompt + "\n\nVirus Total Analysis:\n  be suspicious! so if some of viruse total report points that " \
-             "its malicious so it is! be determined!" + total_v_short
-    prompt = combine_analysis_and_query(prompt, "Is the PDF malicious?")
-    response = process_query_with_agent(prompt)
-    memory["responses"].insert(0, response)
+        prompt += "\n\nThe PDF contains some links. Here is their evaluation:\n"
+    for link in links:
+        link_evaluation = process_query_with_online_agent(
+            f"is this link malicious?: {link}"
+        )
+        link_evaluation = f"Evaluation for link {link}: {link_evaluation}"
+        prompt += f"\n{link_evaluation}"
+
+    prompt += "\n\nVirus Total Analysis:\n" \
+              "Be suspicious! If some of the VirusTotal reports point out it is malicious, " \
+              "then assume it definitely is malicious. "
+    prompt += total_v_short
+
+    # Combine final user query (which is effectively "Is the PDF malicious?")
+    final_prompt = combine_analysis_and_query(prompt, "Is the PDF malicious?")
+
+    # Get response from local agent
+    response = process_query_with_agent(final_prompt)
+    state["memory"]["responses"].insert(0, response)
     return response
 
+def analyze_pdf_btn(state, chat_history):
+    """
+    This function is called when the 'Analyze PDF' button is clicked.
+    It calls get_agent_analysis and appends the result into the chat history.
+    """
+    if not state["pdf_path"]:
+        chat_history.append(
+            ("System", "Please upload a PDF file first.")
+        )
+        return state, chat_history
 
-# Chatbot logic (replace with your chatbot logic)
-def get_response(user_message):
-    global memory
-    if pdf_path:  # Ensure the PDF path is not empty
-        fprompt = combine_analysis_and_query(pdf_analysis, user_message)
-        pqwa_response = process_query_with_agent(fprompt)
-        pqwoa_response = process_query_with_online_agent(
-            query_=" go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die", model=MODEL)
-        ans = f"{pqwa_response} \n\n -------------------------ONLINE----------------------- \n {pqwoa_response}"
-        memory["responses"].insert(0, ans)
-        return ans
-    else:
-        return "Error: PDF file is not selected."
+    response = get_agent_analysis(state)
+    chat_history.append(
+        ("System", response)
+    )
+    return state, chat_history
 
+def get_response_from_chatbot(user_message, state, chat_history):
+    """
+    This replicates your get_response() logic from tkinter:
+    - We combine the PDF analysis with the user's query.
+    - We call the local agent and the online agent, then combine their answers.
+    - We add everything to the chat history.
+    """
+    if not state["pdf_path"]:
+        chat_history.append(
+            ("User", user_message)
+        )
+        chat_history.append(
+            ("System", "Error: PDF file is not selected.")
+        )
+        return state, chat_history
 
-def get_analysis_btn():
-    print("getting analysis....")
-    if pdf_path != "":
-        send_message(to_analyze=True)
-    else:
-        chat_window.insert(tk.END, "Chatbot: ", "bold")
-        chat_window.insert(tk.END, f"Please upload a PDF file first\n")
-    print("Done")
+    # Add the user message to the chat
+    chat_history.append(("User", user_message))
 
+    # Prepare the prompt from PDF analysis and user input
+    fprompt = combine_analysis_and_query(state["pdf_analysis"], user_message)
+    pqwa_response = process_query_with_agent(fprompt)
 
-# Function to handle sending messages
-def send_message(to_analyze=False):
-    user_message = input_box.get()
-    if user_message.strip() or to_analyze:  # Ensure the input isn't empty
-        # Insert "You:" in bold
-        chat_window.insert(tk.END, "You: ", "bold")
-        # Insert the user's message
-        chat_window.insert(tk.END, f"{user_message}\n")
+    # Example call to the online agent (the same from your code)
+    # This is a dummy prompt. Adjust as you see fit:
+    pqwoa_response = process_query_with_online_agent(
+        query_="go to https://en.wikipedia.org/wiki/Main_Page and tell me when did matthew perry die",
+        model=MODEL
+    )
 
-        # Get chatbot response
-        if to_analyze:
-            chatbot_response = get_agent_analysis()
-        else:
-            chatbot_response = get_response(user_message)
+    ans = (
+        f"{pqwa_response}\n\n"
+        "-------------------ONLINE-------------------\n"
+        f"{pqwoa_response}"
+    )
 
-            # Insert "Chatbot:" (non-bold, default style)
-        chat_window.insert(tk.END, "Chatbot: ", "bold")
-        # Insert the chatbot's response
-        chat_window.insert(tk.END, f"{chatbot_response}\n")
+    # Insert the combined response at the top of memory
+    state["memory"]["responses"].insert(0, ans)
 
-        # Auto-scroll to the bottom
-        chat_window.see(tk.END)
+    # Add the chatbot's response to history
+    chat_history.append(("System", ans))
 
-    # Clear the input box
-    input_box.delete(0, tk.END)
+    return state, chat_history
 
+#########################
+# Build the Gradio UI
+#########################
 
-# Create main window
-root = tk.Tk()
-root.title("Local Chatbot")
-root.geometry(f"{WINDOW_WIDTH}x{WINDOW_HEIGHT}")
-root.configure(bg=BG_COLOR)
+with gr.Blocks() as demo:
+    # We'll keep track of everything in a single state dictionary
+    # instead of separate global variables.
+    # chat_history is a list of tuples (speaker, text).
+    state = gr.State({
+        "pdf_path": "",
+        "pdf_analysis": "",
+        "total_v_short": "",
+        "total_v_full": "",
+        "memory": {}
+    })
 
-# Header
-header = tk.Label(root, text="Welcome! Please upload a PDF to review", font=("Arial", HEADER_FONT_SIZE, "bold"),
-                  bg=HEADER_BG,
-                  fg=HEADER_TEXT)
-header.pack(fill=tk.X, pady=PADDING_Y)
+    gr.Markdown("## Local PDF Analysis Chatbot\n"
+                "1. **Upload a PDF** via the file uploader.\n"
+                "2. Click **Analyze PDF** to check if it's malicious.\n"
+                "3. Ask questions about the PDF.\n"
+                "---")
 
-# Add a button to select PDF file before chat
-select_pdf_button = tk.Button(root, text="Select PDF", command=select_pdf, bg=BUTTON_BG, fg=BUTTON_TEXT,
-                              font=("Arial", BUTTON_FONT_SIZE),
-                              activebackground=BUTTON_ACTIVE_BG, activeforeground=BUTTON_ACTIVE_TEXT)
-select_pdf_button.pack(pady=PADDING_Y)
-select_pdf_button.place(x=10, y=550)
+    with gr.Row():
+        pdf_input = gr.File(
+            label="Upload a PDF",
+            file_types=[".pdf"]
+        )
+        analyze_btn = gr.Button("Analyze PDF", variant="primary")
 
-# Add a button for running analysis
-analyze_button = tk.Button(
-    root,
-    text="Analyze PDF",
-    command=get_analysis_btn,  # Function to call when button is clicked
-    bg=BUTTON_BG,
-    fg=BUTTON_TEXT,
-    font=("Arial", BUTTON_FONT_SIZE),
-    activebackground=BUTTON_ACTIVE_BG,
-    activeforeground=BUTTON_ACTIVE_TEXT
-)
-# Place the button in the desired position
-analyze_button.pack(pady=PADDING_Y)
-analyze_button.place(x=10, y=480)  # Adjust position as needed
+    # The Chatbot component to display conversation
+    chat_display = gr.Chatbot(label="Chat History")
 
-# Configure Scrollbar Style (change colors)
-style = ttk.Style()
-style.configure("TScrollbar",
-                gripcount=0,
-                background="gray",  # Set the background color of the scrollbar
-                troughcolor="lightgray",  # Set the trough color (the background of the scrollbar track)
-                width=15)  # Adjust the width of the scrollbar
+    # A textbox for user queries
+    user_input = gr.Textbox(
+        label="Type your question here and click 'Send'",
+        placeholder="E.g. 'What does the PDF talk about?'"
+    )
+    send_btn = gr.Button("Send")
 
-# Chat window (scrollable)
-chat_window = scrolledtext.ScrolledText(
-    root,
-    wrap=tk.WORD,
-    state="normal",
-    height=CHAT_WINDOW_HEIGHT,
-    width=CHAT_WINDOW_WIDTH,
-    bg=CHAT_BG_COLOR,
-    fg=CHAT_TEXT_COLOR,
-    font=("Arial", 12)
-)
-chat_window.pack(pady=PADDING_Y, padx=PADDING_X)
+    # When a PDF is uploaded, we run `select_pdf`:
+    pdf_input.upload(
+        fn=select_pdf,
+        inputs=[pdf_input, state],
+        outputs=[state, chat_display]
+    )
 
-# Configure text tags for styling
-chat_window.tag_config("bold", font=("Arial", 12, "bold"))  # Bold style for "You:"
-chat_window.tag_config("normal", font=("Arial", 12))  # Normal style for other text
+    # When "Analyze PDF" is clicked, we run `analyze_pdf_btn`:
+    analyze_btn.click(
+        fn=analyze_pdf_btn,
+        inputs=[state, chat_display],
+        outputs=[state, chat_display]
+    )
 
-# Separator
-separator = ttk.Separator(root, orient="horizontal")
-separator.pack(fill="x", pady=5)
+    # When the user clicks "Send", we call get_response_from_chatbot:
+    send_btn.click(
+        fn=get_response_from_chatbot,
+        inputs=[user_input, state, chat_display],
+        outputs=[state, chat_display]
+    )
 
-# Input box and send button
-frame = tk.Frame(root, bg=BG_COLOR)
-input_box = tk.Entry(frame, width=INPUT_BOX_WIDTH, font=("Arial", 14), bg=INPUT_BOX_BG, fg=INPUT_BOX_TEXT)
-input_box.pack(side=tk.LEFT, padx=5, pady=5)
-send_button = tk.Button(
-    frame,
-    text="Send",
-    command=send_message,
-    bg=BUTTON_BG,
-    fg=BUTTON_TEXT,
-    font=("Arial", BUTTON_FONT_SIZE),
-    activebackground=BUTTON_ACTIVE_BG,
-    activeforeground=BUTTON_ACTIVE_TEXT
-)
-send_button.pack(side=tk.RIGHT, padx=5, pady=5)
-frame.pack(pady=PADDING_Y)
-
-# Footer
-footer = tk.Label(root, text="Type a message and press Enter or click Send", font=("Arial", FOOTER_FONT_SIZE),
-                  bg=FOOTER_BG, fg=FOOTER_TEXT)
-footer.pack(fill=tk.X, side=tk.BOTTOM)
-
-# Bind Enter key
-root.bind("<Return>", lambda event: send_message())
-
-# curser
-root.config(cursor="arrow")  # Set the default cursor for the window
-input_box.config(cursor="xterm")  # Set the cursor to I-beam (text cursor) for the input box
-chat_window.config(cursor="arrow")  # Set a visible cursor type for the chat window
-send_button.config(cursor="hand2")
-select_pdf_button.config(cursor="hand2")
-analyze_button.config(cursor="hand2")
-
-# Run the application
-if __name__ == "__main__":
-    root.mainloop()
+demo.launch(server_name="0.0.0.0", server_port=7860)
