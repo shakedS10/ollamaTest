@@ -5,11 +5,6 @@ from typing import Dict, Optional
 # Domain
 from .analyzer_factory import get_analyzer
 
-# Services
-# Make sure these imports match your folder structure
-# e.g., if your services folder is at the same level as domain,
-#       you might need 'from services.virus_total_service import VirusTotalService'
-#       or a relative import like 'from ..services.virus_total_service ...'
 from services.virus_total_service import VirusTotalService
 from services.ollama_service import OllamaService
 
