@@ -38,7 +38,7 @@ class UIController:
             file_path=pdf_path,
             file_type="pdf",
             run_vt=True,   # Run VirusTotal
-            run_llm=False  # Or True if you want LLM checks
+            run_llm=True  # Or True if you want LLM checks
         )
         return results
 

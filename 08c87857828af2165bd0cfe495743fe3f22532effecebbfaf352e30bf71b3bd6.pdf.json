@@ -1,0 +1,377 @@
+{
+    "nodes": [
+        {
+            "type": null,
+            "details": "{'/Size': 61, '/Root': IndirectObject(1, 0, 2155131710016), '/Info': IndirectObject(26, 0, 2155131710016), '/ID': ['@[\u0178\u00eck\u2212\u00e8L\u00b3\u00ba\u0160\u00f0\u00aa\u00fb\u00eb0', '@[\u0178\u00eck\u2212\u00e8L\u00b3\u00ba\u0160\u00f0\u00aa\u00fb\u00eb0'], '/Prev': 107866, '/XRefStm': 107471}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Catalog', '/Pages': IndirectObject(2, 0, 2155131710016), '/Lang': 'ru-RU', '/StructTreeRoot': IndirectObject(27, 0, 2155131710016), '/MarkInfo': {'/Marked': True}, '/Metadata': IndirectObject(58, 0, 2155131710016), '/ViewerPreferences': IndirectObject(59, 0, 2155131710016)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Author': 'John', '/Creator': 'Microsoft\u00ae Word 2021', '/CreationDate': \"D:20250114142336+03'00'\", '/ModDate': \"D:20250114142336+03'00'\", '/Producer': 'Microsoft\u00ae Word 2021'}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/XRef', '/Size': 60, '/W': [1, 4, 2], '/Root': IndirectObject(1, 0, 2155131710016), '/Info': IndirectObject(26, 0, 2155131710016), '/ID': ['@[\u0178\u00eck\u2212\u00e8L\u00b3\u00ba\u0160\u00f0\u00aa\u00fb\u00eb0', '@[\u0178\u00eck\u2212\u00e8L\u00b3\u00ba\u0160\u00f0\u00aa\u00fb\u00eb0'], '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Pages', '/Count': 1, '/Kids': [IndirectObject(3, 0, 2155131710016)]}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/StructTreeRoot', '/RoleMap': IndirectObject(28, 0, 2155131710016), '/ParentTree': IndirectObject(29, 0, 2155131710016), '/K': [IndirectObject(31, 0, 2155131710016)], '/ParentTreeNextKey': 1}"
+        },
+        {
+            "type": "/XML",
+            "details": "{'/Type': '/Metadata', '/Subtype': '/XML'}"
+        },
+        {
+            "type": null,
+            "details": "{'/DisplayDocTitle': True}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Footnote': '/Note', '/Endnote': '/Note', '/Textbox': '/Sect', '/Header': '/Sect', '/Footer': '/Sect', '/InlineShape': '/Sect', '/Annotation': '/Sect', '/Artifact': '/Sect', '/Workbook': '/Document', '/Worksheet': '/Part', '/Macrosheet': '/Part', '/Chartsheet': '/Part', '/Dialogsheet': '/Part', '/Slide': '/Part', '/Chart': '/Sect', '/Diagram': '/Figure'}"
+        },
+        {
+            "type": null,
+            "details": "{'/Nums': [0, IndirectObject(33, 0, 2155131710016)]}"
+        },
+        {
+            "type": "/Document",
+            "details": "{'/P': IndirectObject(27, 0, 2155131710016), '/S': '/Document', '/Type': '/StructElem', '/K': [IndirectObject(32, 0, 2155131710016), IndirectObject(35, 0, 2155131710016), IndirectObject(36, 0, 2155131710016), IndirectObject(37, 0, 2155131710016), IndirectObject(38, 0, 2155131710016), IndirectObject(39, 0, 2155131710016), IndirectObject(44, 0, 2155131710016), IndirectObject(50, 0, 2155131710016), IndirectObject(51, 0, 2155131710016)]}"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/TrueType",
+            "details": "{'/Type': '/Font', '/Subtype': '/TrueType', '/Name': '/F1', '/BaseFont': '/BCDEEE+Calibri', '/Encoding': '/WinAnsiEncoding', '/FontDescriptor': IndirectObject(6, 0, 2155131710016), '/FirstChar': 32, '/LastChar': 32, '/Widths': IndirectObject(52, 0, 2155131710016)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/ExtGState', '/BM': '/Normal', '/ca': 1}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/ExtGState', '/BM': '/Normal', '/CA': 1}"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 786, '/Height': 84, '/ColorSpace': '/DeviceRGB', '/BitsPerComponent': 8, '/Interpolate': False, '/SMask': IndirectObject(10, 0, 2155131710016), '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Type0",
+            "details": "{'/Type': '/Font', '/Subtype': '/Type0', '/BaseFont': '/TimesNewRomanPSMT', '/Encoding': '/Identity-H', '/DescendantFonts': IndirectObject(12, 0, 2155131710016), '/ToUnicode': IndirectObject(54, 0, 2155131710016)}"
+        },
+        {
+            "type": "/TrueType",
+            "details": "{'/Type': '/Font', '/Subtype': '/TrueType', '/Name': '/F3', '/BaseFont': '/TimesNewRomanPSMT', '/Encoding': '/WinAnsiEncoding', '/FontDescriptor': IndirectObject(17, 0, 2155131710016), '/FirstChar': 32, '/LastChar': 32, '/Widths': IndirectObject(57, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/Subtype': '/Link', '/Rect': [278.67, 632.37, 359.18, 667.83], '/BS': {'/W': 0}, '/F': 4, '/A': {'/Type': '/Action', '/S': '/URI', '/URI': 'https://www.4sync.com/web/directDownload/Jdu3NTaC/LVsbnVsU.89a79dc1171988a7af3b21b9c04059a0'}}"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 282, '/Height': 118, '/ColorSpace': '/DeviceRGB', '/BitsPerComponent': 8, '/Interpolate': False, '/SMask': IndirectObject(20, 0, 2155131710016), '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 96, '/Height': 118, '/ColorSpace': '/DeviceRGB', '/BitsPerComponent': 8, '/Interpolate': False, '/SMask': IndirectObject(22, 0, 2155131710016), '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 219, '/Height': 11, '/ColorSpace': '/DeviceRGB', '/BitsPerComponent': 8, '/Interpolate': False, '/SMask': IndirectObject(24, 0, 2155131710016), '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 568, '/Height': 305, '/ColorSpace': '/DeviceRGB', '/BitsPerComponent': 8, '/Filter': '/DCTDecode', '/Interpolate': True}"
+        },
+        {
+            "type": null,
+            "details": "[IndirectObject(32, 0, 2155131710016), IndirectObject(36, 0, 2155131710016), IndirectObject(37, 0, 2155131710016), IndirectObject(38, 0, 2155131710016), IndirectObject(40, 0, 2155131710016), IndirectObject(41, 0, 2155131710016), IndirectObject(42, 0, 2155131710016), IndirectObject(43, 0, 2155131710016), IndirectObject(45, 0, 2155131710016), IndirectObject(46, 0, 2155131710016), IndirectObject(47, 0, 2155131710016), IndirectObject(48, 0, 2155131710016), IndirectObject(49, 0, 2155131710016), IndirectObject(50, 0, 2155131710016), IndirectObject(51, 0, 2155131710016), IndirectObject(35, 0, 2155131710016)]"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [0], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Figure",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/Figure', '/Type': '/StructElem', '/K': [15], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [1], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [2], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [3], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [IndirectObject(40, 0, 2155131710016), IndirectObject(41, 0, 2155131710016), IndirectObject(42, 0, 2155131710016), IndirectObject(43, 0, 2155131710016)], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [IndirectObject(45, 0, 2155131710016), IndirectObject(46, 0, 2155131710016), IndirectObject(47, 0, 2155131710016), IndirectObject(48, 0, 2155131710016), IndirectObject(49, 0, 2155131710016)], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [13], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [14], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/FontDescriptor', '/FontName': '/BCDEEE+Calibri', '/Flags': 32, '/ItalicAngle': 0, '/Ascent': 750, '/Descent': -250, '/CapHeight': 750, '/AvgWidth': 521, '/MaxWidth': 1743, '/FontWeight': 400, '/XHeight': 250, '/StemV': 52, '/FontBBox': [-503, -250, 1240, 750], '/FontFile2': IndirectObject(53, 0, 2155131710016)}"
+        },
+        {
+            "type": null,
+            "details": "[226]"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 786, '/Height': 84, '/ColorSpace': '/DeviceGray', '/Matte': [0, 0, 0], '/BitsPerComponent': 8, '/Interpolate': False, '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": null,
+            "details": "[IndirectObject(13, 0, 2155131710016)]"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/FontDescriptor', '/FontName': '/TimesNewRomanPSMT', '/Flags': 32, '/ItalicAngle': 0, '/Ascent': 891, '/Descent': -216, '/CapHeight': 693, '/AvgWidth': 401, '/MaxWidth': 2614, '/FontWeight': 400, '/XHeight': 250, '/Leading': 42, '/StemV': 40, '/FontBBox': [-568, -216, 2046, 693]}"
+        },
+        {
+            "type": null,
+            "details": "[250]"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 282, '/Height': 118, '/ColorSpace': '/DeviceGray', '/Matte': [0, 0, 0], '/BitsPerComponent': 8, '/Interpolate': False, '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 96, '/Height': 118, '/ColorSpace': '/DeviceGray', '/Matte': [0, 0, 0], '/BitsPerComponent': 8, '/Interpolate': False, '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Image",
+            "details": "{'/Type': '/XObject', '/Subtype': '/Image', '/Width': 219, '/Height': 11, '/ColorSpace': '/DeviceGray', '/Matte': [0, 0, 0], '/BitsPerComponent': 8, '/Interpolate': False, '/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [0], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Figure",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/Figure', '/Type': '/StructElem', '/K': [15], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [1], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [2], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [3], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [13], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/P': IndirectObject(31, 0, 2155131710016), '/S': '/P', '/Type': '/StructElem', '/K': [14], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 4}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': '\u0429\u043e\u0431 \u043f\u0435\u0440\u0435\u0433\u043b\u044f\u043d\u0443\u0442\u0438 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442, \u043d\u0430\u0442\u0438\u0441\u043d\u0456\u0442\u044c \u043d\u0430: ', '/K': [5], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [6], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [7], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 8}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': '\u043f\u0435\u0440\u0435\u0433\u043b\u044f\u0434', '/K': [9], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 10}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [11], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 12}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 4}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': '\u0429\u043e\u0431 \u043f\u0435\u0440\u0435\u0433\u043b\u044f\u043d\u0443\u0442\u0438 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442, \u043d\u0430\u0442\u0438\u0441\u043d\u0456\u0442\u044c \u043d\u0430: ', '/K': [5], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [6], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(39, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [7], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 8}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': '\u043f\u0435\u0440\u0435\u0433\u043b\u044f\u0434', '/K': [9], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 10}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [11], '/Pg': IndirectObject(3, 0, 2155131710016)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/P': IndirectObject(44, 0, 2155131710016), '/S': '/Span', '/Type': '/StructElem', '/Pg': IndirectObject(3, 0, 2155131710016), '/K': 12}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode', '/Length1': 81740}"
+        },
+        {
+            "type": "/CIDFontType2",
+            "details": "{'/BaseFont': '/TimesNewRomanPSMT', '/Subtype': '/CIDFontType2', '/Type': '/Font', '/CIDToGIDMap': '/Identity', '/DW': 1000, '/CIDSystemInfo': IndirectObject(14, 0, 2155131710016), '/FontDescriptor': IndirectObject(15, 0, 2155131710016), '/W': IndirectObject(56, 0, 2155131710016)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/Parent': IndirectObject(2, 0, 2155131710016), '/Resources': {'/Font': {'/F1': IndirectObject(5, 0, 2155131710016), '/F2': IndirectObject(11, 0, 2155131710016), '/F3': IndirectObject(16, 0, 2155131710016)}, '/ExtGState': {'/GS7': IndirectObject(7, 0, 2155131710016), '/GS8': IndirectObject(8, 0, 2155131710016)}, '/XObject': {'/Image9': IndirectObject(9, 0, 2155131710016), '/Image19': IndirectObject(19, 0, 2155131710016), '/Image21': IndirectObject(21, 0, 2155131710016), '/Image23': IndirectObject(23, 0, 2155131710016), '/Image25': IndirectObject(25, 0, 2155131710016)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(18, 0, 2155131710016)], '/MediaBox': [0, 0, 595.32, 841.92], '/Contents': IndirectObject(4, 0, 2155131710016), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Ordering': 'Identity', '/Registry': 'Adobe', '/Supplement': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/FontDescriptor', '/FontName': '/TimesNewRomanPSMT', '/Flags': 32, '/ItalicAngle': 0, '/Ascent': 891, '/Descent': -216, '/CapHeight': 693, '/AvgWidth': 401, '/MaxWidth': 2614, '/FontWeight': 400, '/XHeight': 250, '/Leading': 42, '/StemV': 40, '/FontBBox': [-568, -216, 2046, 693], '/FontFile2': IndirectObject(55, 0, 2155131710016)}"
+        },
+        {
+            "type": null,
+            "details": "[0, [778], 3, [250], 15, [250], 29, [278], 595, [1009], 602, [444, 509], 605, [410, 509, 444], 610, [535], 612, [486, 499, 633, 535, 500, 535, 500, 444, 437, 500], 630, [456], 633, [460], 639, [278]]"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode', '/Length1': 80388}"
+        }
+    ],
+    "is_safe": true
+}

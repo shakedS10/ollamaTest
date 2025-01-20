@@ -32,7 +32,7 @@ class PDFAnalyzer(BaseAnalyzer):
                 "file_path": self.file_path,
                 "nodes": [],
                 "is_safe": True,
-                "links": []
+                "links": [] # todo: no duplicates!
             }
 
             # 1) Check internal nodes for malicious content

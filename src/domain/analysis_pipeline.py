@@ -70,6 +70,7 @@ class AnalysisPipeline:
         # ============================
         # 2) Optional VirusTotal Scan
         # ============================
+        vt_data = ""
         if run_vt and self.virus_total_service:
             vt_data = self.run_virus_total(file_path)
             final_results["virus_total"] = vt_data
@@ -82,10 +83,11 @@ class AnalysisPipeline:
         # 3) Optional LLM Check
         # =====================
         if run_llm:
-            llm_data = self.run_llm_check(static_results)
+            links_ev = self.analyze_links(static_results["links"])
+            llm_data = self.run_llm_check(static_results + "\n" + vt_data + "\n Links evaluation" + links_ev)
             final_results["ollama"] = llm_data
 
-        return final_results
+        return final_results["ollama"]
 
     def run_virus_total(self, file_path: str) -> Dict:
         """
@@ -103,6 +105,19 @@ class AnalysisPipeline:
         except Exception as e:
             return {"error": f"VirusTotal failed: {e}"}
 
+    def analyze_links(self, links):
+        links_results = ""
+        for link in links:
+            link_evaluation = OllamaService.process_query_with_online_agent(
+                f"is this link malicious?: {link}"
+            )
+
+            link_evaluation = f"Evaluation for link {link}: {link_evaluation}"
+            links_results += link_evaluation
+        if links_results == "":
+            links_results = "the PDF does not contain any links"
+        return links_results
+
     def run_llm_check(self, static_results: Dict) -> Dict:
         """
         Calls the OllamaService to do an LLM-based check or classification.
@@ -118,7 +133,7 @@ class AnalysisPipeline:
                 "Determine if this file might be malicious or suspicious.\n"
                 "Explain your reasoning."
             )
-            response_text = self.ollama_service.ask(prompt)
+            response_text = self.ollama_service.process_query_with_agent(prompt)
             return {"response": response_text}
         except Exception as e:
             return {"error": f"LLM check failed: {e}"}

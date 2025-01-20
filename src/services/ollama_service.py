@@ -1,7 +1,19 @@
 # ollama_service.py
 
 import requests
+import ast
+import json
+import time
 
+from pdfalyzer.decorators.pdf_tree_node import PdfTreeNode
+from yaralyzer import *
+from pdfalyzer import *
+import requests  # For Ollama API interactions
+import llm_axe
+from llm_axe import OnlineAgent, OllamaChat, Agent
+import ollama
+
+MODEL = "llama3:8b"
 class OllamaService:
     """
     Encapsulates interactions with the Ollama API (local LLM).
@@ -12,18 +24,30 @@ class OllamaService:
         self.model = model
         self.api_url = api_url
 
-    def ask(self, prompt: str) -> str:
+    def process_query_with_agent(query, model=MODEL):
         """
-        Sends a prompt to the Ollama API and returns the model's response.
+        Processes a query using the OnlineAgent and returns the response.
         """
         try:
-            headers = {"Content-Type": "application/json"}
-            data = {"model": self.model, "prompt": prompt}
-            response = requests.post(self.api_url, headers=headers, json=data)
-            response.raise_for_status()
+            # Return the response from the OnlineAgent
+            llm = OllamaChat(model=model)  # Create an Ollama chat instance
+            agent = Agent(llm, custom_system_prompt="read the analysis provided and answer the question")
+            response = agent.ask(query)
 
-            # The API should return JSON with a 'response' field.
-            json_resp = response.json()
-            return json_resp.get("response", "No response available.")
+            return response
         except Exception as e:
-            return f"Error calling Ollama API: {e}"
+            return f"Error processing with OnlineAgent: {e}"
+
+    def process_query_with_online_agent(query_, model=MODEL):
+        """
+        Processes a query using the OnlineAgent and returns the response.
+        """
+        try:
+            llm = OllamaChat(model=model)  # Create an Ollama chat instance
+            searcher = OnlineAgent(llm)  # Create an OnlineAgent instance
+            response = searcher.search(query_)  # Perform the search
+            if response is None:
+                return "No results found from the search."
+            return response
+        except Exception as e:
+            return f"Error processing with OnlineAgent: {e}"

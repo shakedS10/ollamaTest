@@ -1,0 +1,265 @@
+{
+    "nodes": [
+        {
+            "type": null,
+            "details": "{'/Size': 43, '/Root': IndirectObject(1, 0, 2380414627808), '/Info': IndirectObject(42, 0, 2380414627808), '/ID': [b':\\x01X3\\x1b`\\xef9\\xccO\\x1a\\x19\\xad}\\xef*', '\u00e7|\u00b3yikk]\u00a7s\u02ddgp9\u00cd\\x0e']}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Catalog', '/Pages': IndirectObject(2, 0, 2380414627808), '/Lang': 'en-US', '/StructTreeRoot': IndirectObject(3, 0, 2380414627808), '/MarkInfo': {'/Marked': True}}"
+        },
+        {
+            "type": null,
+            "details": "{'/Author': '\u05d0\u05dc\u05d5\u05df \u05d9\u05d5\u05e1\u05e3 \u05e1\u05d5\u05d9\u05e1\u05d4', '/Creator': 'Microsoft\u00ae Word 2016', '/CreationDate': \"D:20241231132438+00'00'\", '/Producer': 'www.ilovepdf.com', '/ModDate': 'D:20241231132438Z'}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Pages', '/Kids': [IndirectObject(5, 0, 2380414627808)], '/Count': 1}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/StructTreeRoot', '/RoleMap': IndirectObject(4, 0, 2380414627808), '/K': [IndirectObject(27, 0, 2380414627808)], '/ParentTree': IndirectObject(29, 0, 2380414627808), '/ParentTreeNextKey': 3}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Footnote': '/Note', '/Endnote': '/Note', '/Textbox': '/Sect', '/Header': '/Sect', '/Footer': '/Sect', '/InlineShape': '/Sect', '/Annotation': '/Sect', '/Artifact': '/Sect', '/Workbook': '/Document', '/Worksheet': '/Part', '/Macrosheet': '/Part', '/Chartsheet': '/Part', '/Dialogsheet': '/Part', '/Slide': '/Part', '/Chart': '/Sect', '/Diagram': '/Figure'}"
+        },
+        {
+            "type": "/Part",
+            "details": "{'/S': '/Part', '/Type': '/StructElem', '/K': [IndirectObject(26, 0, 2380414627808), IndirectObject(32, 0, 2380414627808)], '/P': IndirectObject(3, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Nums': [0, IndirectObject(25, 0, 2380414627808), 1, IndirectObject(31, 0, 2380414627808), 2, [IndirectObject(35, 0, 2380414627808), IndirectObject(36, 0, 2380414627808), IndirectObject(37, 0, 2380414627808), IndirectObject(38, 0, 2380414627808), IndirectObject(39, 0, 2380414627808), IndirectObject(40, 0, 2380414627808), IndirectObject(41, 0, 2380414627808)]]}"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Type0",
+            "details": "{'/Type': '/Font', '/Subtype': '/Type0', '/BaseFont': '/Arial', '/Encoding': '/Identity-H', '/DescendantFonts': IndirectObject(7, 0, 2380414627808), '/ToUnicode': IndirectObject(13, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Type0",
+            "details": "{'/Type': '/Font', '/Subtype': '/Type0', '/BaseFont': '/Arial', '/Encoding': '/Identity-H', '/DescendantFonts': IndirectObject(15, 0, 2380414627808), '/ToUnicode': IndirectObject(21, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/ExtGState', '/BM': '/Normal', '/ca': 1}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/ExtGState', '/BM': '/Normal', '/CA': 1}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/Subtype': '/Link', '/Rect': [483.7, 745.94, 507.55, 769.92], '/BS': {'/W': 0}, '/F': 4, '/A': {'/Type': '/Action', '/S': '/URI', '/URI': 'https://he.symbolab.com/graphing-calculator'}, '/StructParent': 0}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/Subtype': '/Link', '/Rect': [369.66, 721.95, 507.55, 745.94], '/BS': {'/W': 0}, '/F': 4, '/A': {'/Type': '/Action', '/S': '/URI', '/URI': 'https://he.symbolab.com/'}, '/StructParent': 1}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/S': '/P', '/Type': '/StructElem', '/K': [IndirectObject(25, 0, 2380414627808), IndirectObject(36, 0, 2380414627808), IndirectObject(37, 0, 2380414627808)], '/P': IndirectObject(27, 0, 2380414627808)}"
+        },
+        {
+            "type": "/P",
+            "details": "{'/S': '/P', '/Type': '/StructElem', '/K': [IndirectObject(31, 0, 2380414627808), IndirectObject(40, 0, 2380414627808), IndirectObject(41, 0, 2380414627808)], '/P': IndirectObject(27, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/S': '/Link', '/Type': '/StructElem', '/K': [IndirectObject(28, 0, 2380414627808), IndirectObject(35, 0, 2380414627808)], '/P': IndirectObject(26, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [1], '/P': IndirectObject(26, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [2], '/P': IndirectObject(26, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/S': '/Link', '/Type': '/StructElem', '/K': [IndirectObject(33, 0, 2380414627808), IndirectObject(38, 0, 2380414627808), IndirectObject(39, 0, 2380414627808)], '/P': IndirectObject(32, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [5], '/P': IndirectObject(32, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [6], '/P': IndirectObject(32, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [0], '/P': IndirectObject(25, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [3], '/P': IndirectObject(31, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [4], '/P': IndirectObject(31, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "[IndirectObject(8, 0, 2380414627808)]"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": null,
+            "details": "[IndirectObject(16, 0, 2380414627808)]"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode'}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/S': '/Link', '/Type': '/StructElem', '/K': [IndirectObject(28, 0, 2380414627808), IndirectObject(35, 0, 2380414627808)], '/P': IndirectObject(26, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [1], '/P': IndirectObject(26, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [2], '/P': IndirectObject(26, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/S': '/Link', '/Type': '/StructElem', '/K': [IndirectObject(33, 0, 2380414627808), IndirectObject(38, 0, 2380414627808), IndirectObject(39, 0, 2380414627808)], '/P': IndirectObject(32, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/ActualText': ' ', '/K': [5], '/P': IndirectObject(32, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [6], '/P': IndirectObject(32, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/CIDFontType2",
+            "details": "{'/BaseFont': '/Arial', '/Subtype': '/CIDFontType2', '/Type': '/Font', '/CIDToGIDMap': '/Identity', '/DW': 1000, '/CIDSystemInfo': IndirectObject(9, 0, 2380414627808), '/FontDescriptor': IndirectObject(10, 0, 2380414627808), '/W': IndirectObject(12, 0, 2380414627808)}"
+        },
+        {
+            "type": "/CIDFontType2",
+            "details": "{'/BaseFont': '/Arial', '/Subtype': '/CIDFontType2', '/Type': '/Font', '/CIDToGIDMap': '/Identity', '/DW': 1000, '/CIDSystemInfo': IndirectObject(17, 0, 2380414627808), '/FontDescriptor': IndirectObject(18, 0, 2380414627808), '/W': IndirectObject(20, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/OBJR', '/Obj': IndirectObject(24, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [0], '/P': IndirectObject(25, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/OBJR', '/Obj': IndirectObject(30, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [3], '/P': IndirectObject(31, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Span",
+            "details": "{'/S': '/Span', '/Type': '/StructElem', '/K': [4], '/P': IndirectObject(31, 0, 2380414627808), '/Pg': IndirectObject(5, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Ordering': 'Identity', '/Registry': 'Adobe', '/Supplement': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/FontDescriptor', '/FontName': '/Arial', '/Flags': 32, '/ItalicAngle': 0, '/Ascent': 905, '/Descent': -210, '/CapHeight': 728, '/AvgWidth': 441, '/MaxWidth': 2665, '/FontWeight': 400, '/XHeight': 250, '/Leading': 33, '/StemV': 44, '/FontBBox': [-665, -210, 2000, 728], '/FontFile2': IndirectObject(11, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "[0, [750], 17, [278, 278], 29, [278], 68, [556, 556, 500], 72, [556], 75, [556], 79, [222, 833], 82, [556, 556], 86, [500, 278], 92, [500]]"
+        },
+        {
+            "type": null,
+            "details": "{'/Ordering': 'Identity', '/Registry': 'Adobe', '/Supplement': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/FontDescriptor', '/FontName': '/Arial', '/Flags': 32, '/ItalicAngle': 0, '/Ascent': 905, '/Descent': -210, '/CapHeight': 728, '/AvgWidth': 441, '/MaxWidth': 2665, '/FontWeight': 400, '/XHeight': 250, '/Leading': 33, '/StemV': 44, '/FontBBox': [-665, -210, 2000, 728], '/FontFile2': IndirectObject(19, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "[0, [750], 3, [278], 18, [278]]"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/Subtype': '/Link', '/Rect': [483.7, 745.94, 507.55, 769.92], '/BS': {'/W': 0}, '/F': 4, '/A': {'/Type': '/Action', '/S': '/URI', '/URI': 'https://he.symbolab.com/graphing-calculator'}, '/StructParent': 0}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": "/Link",
+            "details": "{'/Subtype': '/Link', '/Rect': [369.66, 721.95, 507.55, 745.94], '/BS': {'/W': 0}, '/F': 4, '/A': {'/Type': '/Action', '/S': '/URI', '/URI': 'https://he.symbolab.com/'}, '/StructParent': 1}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Type': '/Page', '/MediaBox': [0, 0, 595.2, 841.92], '/Resources': {'/Font': {'/F1': IndirectObject(6, 0, 2380414627808), '/F2': IndirectObject(14, 0, 2380414627808)}, '/ExtGState': {'/GS11': IndirectObject(22, 0, 2380414627808), '/GS12': IndirectObject(23, 0, 2380414627808)}, '/ProcSet': ['/PDF', '/Text', '/ImageB', '/ImageC', '/ImageI']}, '/Annots': [IndirectObject(24, 0, 2380414627808), IndirectObject(30, 0, 2380414627808)], '/Contents': IndirectObject(34, 0, 2380414627808), '/Group': {'/Type': '/Group', '/S': '/Transparency', '/CS': '/DeviceRGB'}, '/Tabs': '/S', '/StructParents': 2, '/Parent': IndirectObject(2, 0, 2380414627808)}"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode', '/Length1': 285688}"
+        },
+        {
+            "type": null,
+            "details": "{'/Filter': '/FlateDecode', '/Length1': 269700}"
+        }
+    ],
+    "is_safe": true
+}
